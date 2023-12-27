@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0037415A-59FF-4E55-ACAA-46CAE707B3B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.7.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.7\lib\net45\zxing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.7.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.7\lib\net45\zxing.presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FaturaBilgisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaBilgisi.Designer.cs">
+      <DependentUpon>FaturaBilgisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenü.Designer.cs">
+      <DependentUpon>AnaMenü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Market.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Market.Designer.cs">
+      <DependentUpon>Market.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marketyardımı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marketyardımı.Designer.cs">
+      <DependentUpon>marketyardımı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destek.Designer.cs">
+      <DependentUpon>Destek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciekle.Designer.cs">
+      <DependentUpon>kullaniciekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marketekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marketekle.Designer.cs">
+      <DependentUpon>marketekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelCikart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelCikart.Designer.cs">
+      <DependentUpon>PersonelCikart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEkle.Designer.cs">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelSorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelSorgulama.Designer.cs">
+      <DependentUpon>PersonelSorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personelyardim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personelyardim.Designer.cs">
+      <DependentUpon>Personelyardim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelYenile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelYenile.Designer.cs">
+      <DependentUpon>PersonelYenile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="satisyardim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisyardim.Designer.cs">
+      <DependentUpon>satisyardim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Satışİşlemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satışİşlemi.Designer.cs">
+      <DependentUpon>Satışİşlemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreDegistir.Designer.cs">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sql.cs" />
+    <Compile Include="StokSorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokSorgulama.Designer.cs">
+      <DependentUpon>StokSorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="urunsiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="urunsiparis.Designer.cs">
+      <DependentUpon>urunsiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yeniürün.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniürün.Designer.cs">
+      <DependentUpon>yeniürün.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ürünyardımı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ürünyardımı.Designer.cs">
+      <DependentUpon>Ürünyardımı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ürünekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ürünekle.Designer.cs">
+      <DependentUpon>ürünekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ürünsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ürünsil.Designer.cs">
+      <DependentUpon>ürünsil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FaturaBilgisi.resx">
+      <DependentUpon>FaturaBilgisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenü.resx">
+      <DependentUpon>AnaMenü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Market.resx">
+      <DependentUpon>Market.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marketyardımı.resx">
+      <DependentUpon>marketyardımı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destek.resx">
+      <DependentUpon>Destek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciekle.resx">
+      <DependentUpon>kullaniciekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marketekle.resx">
+      <DependentUpon>marketekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelCikart.resx">
+      <DependentUpon>PersonelCikart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEkle.resx">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelSorgulama.resx">
+      <DependentUpon>PersonelSorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personelyardim.resx">
+      <DependentUpon>Personelyardim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelYenile.resx">
+      <DependentUpon>PersonelYenile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="satisyardim.resx">
+      <DependentUpon>satisyardim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satışİşlemi.resx">
+      <DependentUpon>Satışİşlemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreDegistir.resx">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokSorgulama.resx">
+      <DependentUpon>StokSorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="urunsiparis.resx">
+      <DependentUpon>urunsiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yeniürün.resx">
+      <DependentUpon>yeniürün.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ürünyardımı.resx">
+      <DependentUpon>Ürünyardımı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ürünekle.resx">
+      <DependentUpon>ürünekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ürünsil.resx">
+      <DependentUpon>ürünsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
